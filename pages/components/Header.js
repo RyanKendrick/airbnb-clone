@@ -6,10 +6,12 @@ function Header() {
             <h1>I AM THE HEADERS</h1>
 
             {/* Left Div */}
-            <div>
+            <div className='relative flex items-center h-10'>
                 <Image 
                     src="https://links.papareact.com/qd3"
                     layout="fill"
+                    objectFit="contain"
+                    objectPosition="left"
                 />
             </div>
 
