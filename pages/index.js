@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../.next/components/Header'
+import Header from '../pages/components/Header.js'
 
 export default function Home() {
   return (
