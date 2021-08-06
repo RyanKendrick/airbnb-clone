@@ -1,8 +1,9 @@
 import Image from "next/image";
+import { SearchIcon } from '@heroicons/react/solid';
 
 function Header() {
     return (
-        <header className='sticky top-0 z-50 grid grid-cols-3ß bg-white shadow-md py-5 px-5'>
+        <header className='sticky top-0 z-50 grid grid-cols-3ß bg-white shadow-md p-5 md:px-10'>
             {/* <h1>I AM THE HEADERS</h1> */}
  
             {/* Left Div */}
@@ -16,7 +17,10 @@ function Header() {
             </div>
 
             {/* Middle Div */}
-            <div></div>
+            <div>
+                <input type="text" placeholder="Start your search" />
+                <SearchIcon />
+            </div>
 
             {/* Right Div */}
             <div></div>
