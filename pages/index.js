@@ -3,6 +3,7 @@ import Header from '../pages/components/Header.js';
 import Banner from '../pages/components/Banner.js';
 import SmallCard from './components/SmallCard.js';
 import MediumCard from './components/MediumCard.js';
+import LargeCard from './components/LargeCard.js';
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -35,10 +36,19 @@ export default function Home({ exploreData, cardsData }) {
         <section>
           <h2 className='text-4xl font-semibold py-8'>Live Anywhere</h2>
 
-          {cardsData?.map(({ img, title }) => (
-            <MediumCard key={img} img={img} title={title} />
-          ))}
+          <div className='flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3'>
+            {cardsData?.map(({ img, title }) => (
+              <MediumCard key={img} img={img} title={title} />
+            ))}
+          </div>
         </section>
+
+        <LargeCard 
+          img='https://links.papareact.com/4cj'
+          title='The Greatest Outdoors'
+          description="Wishlists curated by Airbnb"
+          buttonText="Get Inspired"
+        />
       </main>
 
     </div>
