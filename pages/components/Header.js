@@ -3,7 +3,7 @@ import { SearchIcon } from '@heroicons/react/solid';
 
 function Header() {
     return (
-        <header className='sticky top-0 z-50 grid grid-cols-3ß bg-white shadow-md p-5 md:px-10'>
+        <header className='sticky top-0 z-50 grid grid-cols-3 bg-white shadow-md p-5 md:px-10'>
             {/* <h1>I AM THE HEADERS</h1> */}
  
             {/* Left Div */}
@@ -19,7 +19,7 @@ function Header() {
             {/* Middle Div */}
             <div>
                 <input type="text" placeholder="Start your search" />
-                <SearchIcon />
+                <SearchIcon className='h-8 bg-red-400'/>
             </div>
 
             {/* Right Div */}
