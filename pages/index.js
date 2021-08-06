@@ -1,5 +1,6 @@
-import Head from 'next/head'
-import Header from '../pages/components/Header.js'
+import Head from 'next/head';
+import Header from '../pages/components/Header.js';
+import Banner from '../pages/components/Banner.js';
 
 export default function Home() {
   return (
@@ -10,6 +11,8 @@ export default function Home() {
       </Head>
 
       <Header />
+      <Banner />
+
     </div>
   )
 }
