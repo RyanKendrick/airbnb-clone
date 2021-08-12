@@ -66,8 +66,10 @@ function Header() {
                 {/* <UsersIcon className='h-6 cursor-pointer' /> */}
             </div>
 
+            {/* Date range picker dropdown section */}
+            
             {searchInput && (
-                <div>
+                <div className='flex flex-col col-span-3 mx-auto'>
                     <DateRangePicker
                         ranges={[selectionRange]}
                         minDate={new Date()}
