@@ -17,10 +17,15 @@ function Header() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
 
+    const handleSelect = (ranges) => {
+        setStartDate(ranges.selection.startDate);
+        setEndDate(ranges.selection.endDate);
+    }
+   
     const selectionRange = {
         startDate: startDate,
         endDate: endDate,
-        key: 'Selection'
+        key: 'selection'
     }
 
     return (
@@ -64,7 +69,10 @@ function Header() {
             {searchInput && (
                 <div>
                     <DateRangePicker
-                        ranges={[selectionRange]}    
+                        ranges={[selectionRange]}
+                        minDate={new Date()}
+                        rangeColors={['#FD5B61']}  
+                        onChange={handleSelect}   
                     />
                 </div>
             )}
