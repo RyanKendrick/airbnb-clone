@@ -10,6 +10,7 @@ import { useState } from 'react';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { DateRangePicker } from 'react-date-range';
+import { useRouter } from 'next/dist/client/router';
 
 function Header() {
 
@@ -17,6 +18,7 @@ function Header() {
     const [startDate, setStartDate] = useState(new Date());
     const [endDate, setEndDate] = useState(new Date());
     const [numOfGuests, setNumOfGuests] = useState(1);
+    const router = useRouter();
 
     const handleSelect = (ranges) => {
         setStartDate(ranges.selection.startDate);
@@ -38,7 +40,7 @@ function Header() {
             {/* <h1>I AM THE HEADERS</h1> */}
  
             {/* Left Div */}
-            <div className='relative h-10 cursor-pointer my-auto'>
+            <div onClick={() => router.push("/")} className='relative h-10 cursor-pointer my-auto'>
                 <Image 
                     src="https://links.papareact.com/qd3"
                     layout="fill"
