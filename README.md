@@ -1,4 +1,4 @@
-**Airbnb front end clone built with Next.js and Tailwind CSS**
+**Airbnb front end project built with Next.js and Tailwind CSS**
 
 [Original Demo by Sonny Sanga on Youtube](https://youtu.be/BbilqOBOfg8)
 
